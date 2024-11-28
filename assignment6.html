@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTHING</title>
+</head>
+<body>
+    <button id="alertButton">DO ME </button>
+
+    <script>
+        document.getElementById("alertButton").addEventListener("click", function() {
+            alert("SOMEBODY IS CLICKING A BUTTON");
+        });
+    </script>
+ 
+    
+    <style>
+        #hoverDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightgrey;
+        }
+    </style>
+
+
+    question 2 <br>
+
+
+
+    <div id="hoverDiv"></div>
+
+    <script>
+        const div = document.getElementById("hoverDiv");
+
+        div.addEventListener("mouseover", function() {
+            div.style.backgroundColor = "blue";
+        });
+
+        div.addEventListener("mouseout", function() {
+            div.style.backgroundColor = "lightgrey";
+        });
+    </script>
+
+
+
+    question 3 <br>
+
+
+    <input type="text" id="textInput" placeholder="Press a key">
+
+    <script>
+        document.addEventListener("keydown", function(event) {
+            console.log("Key pressed: " + event.key);
+        });
+    </script>
+
+<br>
+
+    question 4<br>
+    <p id="doubleClickPara">Double-click me to change this text.</p>
+
+    <script>
+        document.getElementById("doubleClickPara").addEventListener("dblclick", function() {
+            this.textContent = "Text has been changed!";
+        });
+        
+    </script>
+
+    question 5<br>
+
+    <form id="myForm">
+        <input type="text" placeholder="Enter something">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Form submission is prevented!");
+        });
+    </script>
+
+
+
+
+
+  
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
